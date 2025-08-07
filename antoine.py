@@ -58,8 +58,8 @@ def get_antoine_coef(Name, Temperature):
         # For the temperatures, we have a range and we need to extract each
         # limit (lower and higher) and put them in an extra list. So
         # Temperatures variable will be a list of lists.
-        lower_lim = float(cols[0].text.replace(" ","").split('-')[0])
-        higher_lim = float(cols[0].text.replace(" ","").split('-')[1])
+        lower_lim = float(cols[0].text.replace(" ","").split('to')[0])
+        higher_lim = float(cols[0].text.replace(" ","").split('to')[1])
         Temperatures.append([lower_lim, higher_lim])
 
 
